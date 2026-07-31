@@ -52,7 +52,7 @@
       </a>
 
       <nav class="navbar__links">
-        <a href="index.html" class="is-active">Home</a>
+        <a href="#home" class="is-active">Home</a>
         <a href="about.html">Chi siamo</a>
         <a href="services.html">Servizi</a>
         <a href="projects.html">Progetti</a>
@@ -69,10 +69,13 @@
 
     <!-- HERO -->
     <section class="hero" id="home">
+      <canvas class="hero__bg"></canvas>
       <div class="hero__glow"></div>
 
       <div class="container hero__inner">
         <div class="hero__content">
+          <div class="hero__eyebrow"><span class="dot"></span> Accettiamo nuovi progetti</div>
+
           <h1 class="hero__title">
             Diamo <span class="text-gradient">trazione</span><br>
             al tuo business
@@ -91,6 +94,10 @@
 
               </div>
 
+      <div class="scroll-indicator">
+        <div class="scroll-indicator__wheel"><span></span></div>
+        Scorri
+      </div>
     </section>
 
     <!-- CHI SIAMO -->
@@ -120,43 +127,26 @@
           </div>
 
           <div class="grid grid--2 reveal" data-delay="150">
-
             <div class="card value-card">
               <span class="value-card__number">01</span>
-              <h3 class="service-card__title">Strategia prima della tecnologia</h3>
-              <p>
-                Ogni progetto nasce dall'analisi degli obiettivi,
-                del mercato e delle persone da raggiungere.
-              </p>
+              <h3 class="service-card__title">Orientati al cliente</h3>
+              <p>Ogni soluzione nasce dalle esigenze reali del tuo business.</p>
             </div>
-
             <div class="card value-card">
               <span class="value-card__number">02</span>
-              <h3 class="service-card__title">Design con uno scopo</h3>
-              <p>
-                Creiamo esperienze digitali curate,
-                semplici da usare e pensate per ottenere risultati.
-              </p>
+              <h3 class="service-card__title">Tecnologia moderna</h3>
+              <p>Siti veloci, responsive e ottimizzati per ogni dispositivo.</p>
             </div>
-
             <div class="card value-card">
               <span class="value-card__number">03</span>
-              <h3 class="service-card__title">Sviluppo solido</h3>
-              <p>
-                Tecnologie moderne, codice pulito
-                e soluzioni progettate per crescere nel tempo.
-              </p>
+              <h3 class="service-card__title">Partnership</h3>
+              <p>Non siamo fornitori: siamo partner nel tuo percorso di crescita.</p>
             </div>
-
             <div class="card value-card">
               <span class="value-card__number">04</span>
-              <h3 class="service-card__title">Partner nel tempo</h3>
-              <p>
-                Non realizziamo solo un sito:
-                costruiamo una collaborazione duratura.
-              </p>
+              <h3 class="service-card__title">Crescita continua</h3>
+              <p>Soluzioni pensate per evolvere insieme alla tua attività.</p>
             </div>
-
           </div>
         </div>
       </div>
@@ -248,62 +238,37 @@
           <p class="section-subtitle">Un processo chiaro, dalla prima call alla messa online.</p>
         </div>
 
-        <div class="method-list reveal">
-
-          <article class="method-item">
-            <span class="method-number">01</span>
-            <div>
-              <h3>Discovery</h3>
-              <p>
-                Analizziamo il tuo business, gli obiettivi
-                e il pubblico per definire una direzione chiara.
-              </p>
-            </div>
-          </article>
-
-          <article class="method-item">
-            <span class="method-number">02</span>
-            <div>
-              <h3>Strategia</h3>
-              <p>
-                Definiamo struttura, contenuti e funzionalità
-                prima di iniziare lo sviluppo.
-              </p>
-            </div>
-          </article>
-
-          <article class="method-item">
-            <span class="method-number">03</span>
-            <div>
-              <h3>Design & Development</h3>
-              <p>
-                Trasformiamo la strategia in un prodotto digitale
-                moderno, veloce e scalabile.
-              </p>
-            </div>
-          </article>
-
-          <article class="method-item">
-            <span class="method-number">04</span>
-            <div>
-              <h3>Launch & Growth</h3>
-              <p>
-                Lanciamo il progetto online e continuiamo
-                a supportarne la crescita.
-              </p>
-            </div>
-          </article>
-
+        <div class="grid grid--4">
+          <div class="card process-step reveal">
+            <div class="process-step__number">01</div>
+            <h3>Analisi</h3>
+            <p>Comprendiamo le tue esigenze, obiettivi e target di riferimento.</p>
+          </div>
+          <div class="card process-step reveal">
+            <div class="process-step__number">02</div>
+            <h3>Progettazione</h3>
+            <p>Definiamo struttura, design e funzionalità del progetto.</p>
+          </div>
+          <div class="card process-step reveal">
+            <div class="process-step__number">03</div>
+            <h3>Sviluppo</h3>
+            <p>Realizziamo, testiamo e ottimizziamo ogni dettaglio.</p>
+          </div>
+          <div class="card process-step reveal">
+            <div class="process-step__number">04</div>
+            <h3>Lancio</h3>
+            <p>Pubblichiamo online e restiamo al tuo fianco per il supporto.</p>
+          </div>
         </div>
 
         <div class="grid grid--4 reveal" style="margin-top: var(--space-4xl); text-align:center;">
           <div class="stat-item">
-            <div class="stat-item__number">3+</div>
-            <div class="stat-item__label">Settori supportati</div>
+            <div class="stat-item__number" data-count="10">0</div>
+            <div class="stat-item__label">Progetti completati</div>
           </div>
           <div class="stat-item">
-            <div class="stat-item__number">100%</div>
-            <div class="stat-item__label">Design responsive</div>
+            <div class="stat-item__number" data-count="100">0</div>
+            <div class="stat-item__label">% Responsive</div>
           </div>
           <div class="stat-item">
             <div class="stat-item__number" data-count="2">0</div>
@@ -321,8 +286,8 @@
     <section class="section">
       <div class="container">
         <div class="cta-banner reveal">
-          <h2>Hai un progetto in mente?</h2>
-          <p>Trasformiamo la tua idea in un prodotto digitale moderno, efficace e pensato per crescere.</p>
+          <h2>Pronto a far crescere il tuo business?</h2>
+          <p>Raccontaci la tua idea. Analizzeremo insieme la soluzione più adatta alle tue esigenze.</p>
           <a href="contact.html" class="btn btn--secondary">Inizia ora — è gratuito</a>
         </div>
       </div>
@@ -375,41 +340,14 @@
 
   <footer class="footer">
     <div class="container">
-
       <div class="footer__brand">
         <img src="assets/images/logo-light.svg" alt="TRAZIO">
-        <p class="footer__tagline">
-          Digital Growth Studio
-        </p>
       </div>
-
-      <div class="footer__links">
-
-        <div>
-          <h4>Servizi</h4>
-          <a href="services.html">Siti Web</a>
-          <a href="services.html">Landing Page</a>
-          <a href="services.html">Automazioni</a>
-        </div>
-
-        <div>
-          <h4>Azienda</h4>
-          <a href="about.html">Chi siamo</a>
-          <a href="projects.html">Progetti</a>
-          <a href="contact.html">Contatti</a>
-        </div>
-
-        <div>
-          <h4>Contatti</h4>
-          <a href="mailto:info@trazio.it">
-            info@trazio.it
-          </a>
-        </div>
-
+      <p class="footer__tagline">Digital Growth Studio</p>
+      <div class="footer__socials">
+        <a href="mailto:info@trazio.it" aria-label="Email">Email</a>
       </div>
-
       <p>&copy; 2026 TRAZIO. Tutti i diritti riservati.</p>
-
     </div>
   </footer>
 
